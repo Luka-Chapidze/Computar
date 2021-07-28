@@ -636,6 +636,18 @@ nav{
     line-height: 50px;
     font-family: 'Fira Sans', sans-serif;
     text-align: center;
+
+}
+.view{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    color: #6ABD0D;
+    text-decoration: none;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.04em;
+    margin-top: 9px;
 }
 
 #experts-div {
@@ -658,7 +670,7 @@ nav{
             flex: 1 0 200px;
 }
 
-#experts-section a {
+.experts-text {
     display: block;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -669,10 +681,7 @@ nav{
     line-height: 1.3rem;
 }
 
-#experts-section .view {
-    color: #6ABD0D;
-    text-decoration: none;
-}
+
 
 
 #experts-p {
@@ -681,7 +690,62 @@ nav{
     text-align: center;
 }
 
+.modal{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out ;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 34;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+.modal.active{
+    transform: translate(-50%, -50%) scale(1);
+}
 
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.modal-header .info-close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+ .modal-body{
+     padding: 10px 15px;
+ }
+
+ .modal-body li{
+     list-style-type: none;
+ }
+
+ #overlay{
+     position: fixed;
+     opacity: 0;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color:rgba(0, 0, 0, 0.5) ;
+     pointer-events: none;
+     transition: 200ms ease-in-out ;
+
+ }
+
+ #overlay.active {
+    pointer-events: all;
+    opacity: 1;
+ }
 
 /*----------------------------------------------------------------------------*/
 
