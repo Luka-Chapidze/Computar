@@ -696,13 +696,15 @@ nav{
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
     transition: 200ms ease-in-out ;
-    border: 1px solid black;
+    /* border: 1px solid rgb(160, 145, 145); */
     border-radius: 10px;
     z-index: 34;
-    background-color: white;
+    background: white;
+    opacity: 0.8;
     width: 500px;
     max-width: 80%;
 }
+
 .modal.active{
     transform: translate(-50%, -50%) scale(1);
 }
@@ -746,6 +748,22 @@ nav{
     pointer-events: all;
     opacity: 1;
  }
+#text1, #textTwo, #text3, #text4{
+    display: none;
+}
+#text1.show-more{
+    display: inline;
+ }
+ #textTwo.show-more{
+    display: inline;
+ }
+#text3.show-more{
+    display: inline;
+}
+#text4.show-more{
+    display: inline;
+}
+
 
 /*----------------------------------------------------------------------------*/
 
