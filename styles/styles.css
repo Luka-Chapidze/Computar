@@ -264,6 +264,8 @@ nav{
     color: #6ABD0D;
 }
 
+
+
 #get-started-div a:hover{
     font-weight: bold;
     -webkit-transition: 0.5s;
@@ -2116,6 +2118,38 @@ a{
 
 }
 
+/*----------------------------------------------------------
+ CONTACTS PAGE
+ ----------------------------------------------------------*/
+
+.contact-section{
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-detail{
+    margin-left: 150px;
+    margin-top: 90px;
+    width: 500px;
+    
+}
+.contact-detail p {
+    font-family: "Encode Sans", sans-serif;
+    text-align: left;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 600;
+    color: #131313;
+  
+
+}
+.map{
+    margin-right: 150px;
+    margin-top: 90px;
+}
+
+
 /*=============================================================================
 Media query for nav
 ===============================================================================*/
@@ -2166,7 +2200,23 @@ Media query for nav
         
     }
   
+/*-------------------------------------------------------------
+contacts media 979
+----------------------------------------------------------------*/
+
+.contact-detail{
+    margin-left: 100px;
+    margin-top: 90px;
+    width: 400px;
+    
 }
+
+.map{
+    margin-right: 100px;
+    margin-top: 90px;
+}
+
+
 
 
 
@@ -2305,7 +2355,30 @@ Media query
         margin-bottom: 70px;
         
     }
+/*----------------------------------------
+contacts media 780
+-----------------------------------------*/
+.contact-section{
+    width: 300px;
+    flex-direction: column;
+    height: 800px;
+    justify-content: space-evenly;
+    
+}
+.contact-detail{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 200px;
 
+    
+}
+
+.map{
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
 
 
 
