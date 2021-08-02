@@ -137,16 +137,48 @@ nav{
     color: black;
     font-family: 'Fira Sans', sans-serif;
 }
+
 #contact{
-    background: -o-linear-gradient(191.97deg, #EBFF5F -0.9%, #6ABD0D 100%);
     background: linear-gradient(258.03deg, #EBFF5F -0.9%, #6ABD0D 100%);
     border-radius: 50px;
     width: 113px;
     height: 52px;
     text-align: center;
 
-    
+   
+
 }
+/*---------------------------------
+Buttons
+-----------------------------------*/
+#contact:hover {
+animation-name: button;
+animation-timing-function:ease-in;
+animation-duration: 1.5s;
+animation-direction: alternate-reverse;
+
+}
+#prices-btn:hover{
+    animation-name: button;
+    animation-timing-function:ease-in;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+}
+
+#services-btn:hover{
+    animation-name: button;
+    animation-timing-function:ease-in;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes button {
+    0%{  background-size: 100%; background-position: right;}
+    50%{background-size: 200%; background-position: center;}
+    100%{background-size: 300%; background-position: left; }
+   
+}
+
 
 #contact-link{
     position: relative;
@@ -259,7 +291,7 @@ nav{
     width:  100%;
     height: 7px;
     display: block;
-    margin-top: -16px;
+    margin-top: -13px;
    
     
 }
@@ -2270,8 +2302,8 @@ Media query
 
     #underline::after{
         width:  100%;
-        height: 3px;
-        margin-top: -10px;
+        height: 5px;
+        margin-top: -8px;
     }
 
     .nav-links ul li{
