@@ -198,7 +198,7 @@ nav{
 .text-box {
     position: relative;
     right: 6.5%;
-    width: 37%;
+    width: 40%;
     
 }
 .text-box p{
@@ -314,7 +314,7 @@ nav{
 }
 #prices-btn{
    
-    margin-top: 100px;
+    margin-top: 60px;
     width: 80px;
     height: 52px;
     background: -o-linear-gradient(191.97deg, #EBFF5F -0.9%, #6ABD0D 100%);
@@ -2126,9 +2126,46 @@ Media query for nav
         display: none;
     }
 
-    ul{
-        margin-top: 50px;
+  
+    .nav-links ul {
+        width: 30px;
+     
     }
+    
+    nav{
+        padding-top: 40px;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    }
+    .nav-links ul li{
+        display: block;
+        padding-left: 10px;
+    }
+
+    .nav-links{
+        position: absolute;
+        height: 100%;
+        width: 0;
+        top: 0;
+        display: none;
+        text-align: left;
+        z-index: 2;
+        -webkit-transition: 1s;
+           -moz-transition: 1s;
+             -o-transition: 1s;
+                transition: 1s;
+        background-color:#E5E5E5 ;
+    }
+    #contact{ 
+        background: none;    
+    }
+    
+    #contact-link{
+        left: 0; 
+        color: black;
+        
+    }
+  
 }
 
 
@@ -2169,6 +2206,7 @@ Media query
     }
     .text-box{
         padding-top: 50px ;
+        width: 500px;
     }
 
     .text-box p{
@@ -2214,6 +2252,7 @@ Media query
         max-width: 300px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 50px;
     }
 
     #home{
